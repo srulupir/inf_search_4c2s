@@ -1,0 +1,10 @@
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+task1/pages/
+.idea/
+venv/
+pyenv/
+__pycache__/
+*.pyc
