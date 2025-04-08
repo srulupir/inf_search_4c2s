@@ -8,3 +8,4 @@ venv/
 pyenv/
 __pycache__/
 *.pyc
+task1/processing.log

@@ -1,0 +1,9 @@
+callisto: callisto
+eclipse: eclipse
+open: open
+release: release
+source: source
+вместе: вместе
+выйти: вышел
+проект: проектами
+состав: составе

@@ -1,0 +1,12 @@
+articles: articles
+com: com
+domains: domains
+googles: googles
+growing: growing
+html: html
+list: list
+pronetadvertising: pronetadvertising
+www: www
+домен: доменов
+занятный: занятный
+список: список

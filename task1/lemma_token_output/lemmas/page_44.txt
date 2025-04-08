@@ -1,0 +1,12 @@
+blog: blog
+comment: comment
+comments: comments
+habrahabr: habrahabr
+login: login
+url: url
+www: www
+жать: жмем
+логин: логин, логина
+переадресовать: переадресует
+пример: пример
+страница: странице
