@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поисковая система</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Поиск по документам</h1>
+
+        <form method="POST">
+            <input type="text" name="query" value="{{ query }}"
+                   placeholder="Введите поисковый запрос..." required>
+            <button type="submit">Найти</button>
+        </form>
+
+        {% if query %}
+            <div class="results">
+                <h2>Результаты для "{{ query }}"</h2>
+
+                {% if results %}
+                    <div class="result-count">Найдено документов: {{ results|length }}</div>
+
+                    <ol class="result-list">
+                        {% for result in results %}
+                        <li class="result-item">
+                            <div class="doc-url">
+                                <a href="{{ result.url }}" target="_blank">{{ result.url }}</a>
+                                <span class="score">(релевантность: {{ "%.2f"|format(result.score) }})</span>
+                            </div>
+                            <div class="preview">{{ result.content }}</div>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                {% else %}
+                    <div class="no-results">Ничего не найдено</div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
